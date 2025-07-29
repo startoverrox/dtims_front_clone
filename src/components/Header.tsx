@@ -3,7 +3,7 @@ import logo from '@/assets/images/logo.svg';
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between px-4 py-2">
+    <header className="flex items-center justify-between px-4 py-2 h-[60px]">
       <Link to="/">
         <img src={logo} alt="logo" className="w-8 h-8" />
       </Link>
