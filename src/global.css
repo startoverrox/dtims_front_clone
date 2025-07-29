@@ -1,0 +1,117 @@
+@import 'tailwindcss';
+
+@layer base {
+  /*태그초기화*/
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  ul,
+  ol,
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  address,
+  em {
+    font-style: normal;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  th {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  input,
+  button,
+  select {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+  }
+  button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+  }
+  table {
+    border-collapse: collapse;
+    border: 0;
+  }
+  table caption {
+    display: none;
+  }
+  fieldset {
+    border: 0;
+  }
+  legend {
+    display: none;
+  }
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local('NotoSans-Regular'),
+    url(./assets/fonts/NotoSans-Regular.woff2) format('woff2'),
+    url(./assets/fonts/NotoSans-Regular.woff) format('woff');
+}
+
+@theme {
+  --font-sans: 'NotoSans', sans-serif;
+
+  /* text */
+  --text-S-100: 0.5rem; /* 8px */
+  --text-S-200: 1rem; /* 16px */
+  --text-S-300: 1.5rem; /* 24px */
+  --text-S-400: 2rem; /* 32px */
+  --text-S-500: 2.5rem; /* 40px */
+
+  --text-M-100: 3.5rem; /* 56px */
+  --text-M-200: 4rem; /* 64px */
+  --text-M-300: 4.5rem; /* 72px */
+
+  /* spacing */
+  /* S: distance between small components */
+  --spacing-S-100: 0.5rem; /* 8px */
+  --spacing-S-200: 1rem; /* 16px */
+  --spacing-S-300: 1.5rem; /* 24px */
+  --spacing-S-400: 2rem; /* 32px */
+  --spacing-S-500: 2.5rem; /* 40px */
+
+  /* M: distance between groups */
+  --spacing-M-100: 3.5rem; /* 56px */
+  --spacing-M-200: 4rem; /* 64px */
+  --spacing-M-300: 4.5rem; /* 72px */
+
+  /* L: distance between sections */
+  --spacing-L-100: 5rem; /* 80px */
+  --spacing-L-200: 6rem; /* 96px */
+  --spacing-L-300: 7rem; /* 112px */
+  --spacing-L-400: 8rem; /* 128px */
+  --spacing-L-500: 9rem; /* 144px */
+  --spacing-L-600: 10rem; /* 160px */
+  --spacing-L-700: 11rem; /* 176px */
+  --spacing-L-800: 12rem; /* 192px */
+  --spacing-L-900: 13rem; /* 208px */
+  --spacing-L-1000: 14rem; /* 224px */
+
+  /* responsive */
+  --breakpoint-*: initial;
+  --breakpoint-mobile: 30rem;
+  --breakpoint-tablet: 48rem;
+  --breakpoint-desktop: 64rem;
+  --breakpoint-large: 80rem;
+}
