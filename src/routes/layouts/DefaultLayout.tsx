@@ -5,7 +5,9 @@ const DefaultLayout = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <Outlet />
+      <div className="h-[calc(100vh-60px)] overflow-y-auto">
+        <Outlet />
+      </div>
     </div>
   );
 };

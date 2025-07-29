@@ -1,6 +1,6 @@
 const HomePage = () => {
   return (
-    <div className="px-4 flex justify-center items-center h-[calc(100vh-60px)]">
+    <div className="px-4 flex justify-center items-center">
       <div className="flex flex-col justify-between items-stretch w-[400px] h-[200px]">
         <button className="border">a</button>
         <button className="border">b</button>
