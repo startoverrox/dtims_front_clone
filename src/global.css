@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @layer base {
   /*태그초기화*/
@@ -60,17 +60,17 @@
 }
 
 @font-face {
-  font-family: 'NotoSans';
+  font-family: "NotoSans";
   font-weight: 400;
   font-display: swap;
   src:
-    local('NotoSans-Regular'),
-    url(./assets/fonts/NotoSans-Regular.woff2) format('woff2'),
-    url(./assets/fonts/NotoSans-Regular.woff) format('woff');
+    local("NotoSans-Regular"),
+    url(./assets/fonts/NotoSans-Regular.woff2) format("woff2"),
+    url(./assets/fonts/NotoSans-Regular.woff) format("woff");
 }
 
 @theme {
-  --font-sans: 'NotoSans', sans-serif;
+  --font-sans: "NotoSans", sans-serif;
 
   /* text */
   --text-S-100: 0.5rem; /* 8px */

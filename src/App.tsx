@@ -1,12 +1,12 @@
-import { RouterProvider, createBrowserRouter } from 'react-router';
-import ProtectedLayout from '@/routes/layouts/ProtectedLayout';
-import AuthLayout from '@/routes/layouts/AuthLayout';
-import DefaultLayout from '@/routes/layouts/DefaultLayout';
-import HomePage from '@/routes/pages/HomePage';
-import JobPage from '@/routes/pages/JobPage';
-import LoginPage from '@/routes/pages/LoginPage';
-import RegisterPage from '@/routes/pages/RegisterPage';
-import ErrorPage from '@/routes/pages/ErrorPage';
+import { RouterProvider, createBrowserRouter } from "react-router";
+import ProtectedLayout from "@/routes/layouts/ProtectedLayout";
+import AuthLayout from "@/routes/layouts/AuthLayout";
+import DefaultLayout from "@/routes/layouts/DefaultLayout";
+import HomePage from "@/routes/pages/HomePage";
+import JobPage from "@/routes/pages/JobPage";
+import LoginPage from "@/routes/pages/LoginPage";
+import RegisterPage from "@/routes/pages/RegisterPage";
+import ErrorPage from "@/routes/pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
@@ -17,11 +17,11 @@ const router = createBrowserRouter([
         element: <DefaultLayout />,
         children: [
           {
-            path: '/',
+            path: "/",
             element: <HomePage />,
           },
           {
-            path: '/job',
+            path: "/job",
             element: <JobPage />,
           },
         ],
@@ -33,11 +33,11 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: '/login',
+        path: "/login",
         element: <LoginPage />,
       },
       {
-        path: '/signup',
+        path: "/signup",
         element: <RegisterPage />,
       },
     ],
