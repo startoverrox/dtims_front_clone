@@ -1,7 +1,7 @@
 const HomePage = () => {
   return (
-    <div className="flex justify-center items-center">
-      <div className="flex flex-col justify-between items-stretch w-[400px] h-[200px]">
+    <div className="flex h-full items-center justify-center">
+      <div className="flex h-[200px] w-[400px] flex-col items-stretch justify-between">
         <button className="border">a</button>
         <button className="border">b</button>
         <button className="border">c</button>
