@@ -1,4 +1,6 @@
 import { RouterProvider, createBrowserRouter } from "react-router";
+import { ToastContainer } from "react-toastify";
+import GlobalToastHandler from "@/components/GlobalToastHandler";
 import ProtectedLayout from "@/routes/layouts/ProtectedLayout";
 import AuthLayout from "@/routes/layouts/AuthLayout";
 import DefaultLayout from "@/routes/layouts/DefaultLayout";
@@ -48,8 +50,8 @@ export default function App() {
   return (
     <>
       <RouterProvider router={router} />
-      <>GlobalToastHandler</>
-      <>ToastContainer</>
+      <GlobalToastHandler />
+      <ToastContainer />
     </>
   );
 }
